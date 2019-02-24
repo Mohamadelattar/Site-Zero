@@ -1,0 +1,310 @@
+/*Le fond de l'écran */
+body
+{
+background-image: url("fond_jaune.png");
+background-attachment: fixed;
+}
+/*Déclaration de les polices */
+@font-face {
+  font-family: 'ballpark';
+  src: url('ballpark.ttf') format('ttf'),
+       url('ballpark.woff') format('woff'),
+       url('ballpark.svg') format('svg'),
+       url('ballpark.eot') format('eot');
+}
+@font-face {
+  font-family: 'dayrom';
+  src:url('dayrom.ttf') format('ttf'),
+      url('dayrom.svg') format('svg'),
+      url('dayrom.eot') format('eot'),
+      url('dayrom.woff') format('woff');
+}
+/* Géneral */
+*
+{
+padding-left: 10px;
+margin-right: 10px;
+
+
+}
+h2
+{
+  text-transform: uppercase;
+  font-family: 'dayrom';
+  font-weight: normal;
+}
+.warper
+{
+  display: inline-block;
+  float: left;
+  width: 900px;
+}
+
+a
+{
+  text-decoration: none;
+  color: #444;
+
+
+}
+/* header */
+header
+{
+  height: 120px;
+}
+header nav
+{
+
+  float:right;
+  font-size: 1.3em;
+  display: inline-block;
+  width: 700px;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  top:60px;
+
+}
+header h1
+{
+  font-family: 'ballpark' ;
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+header h2
+{
+font-family: 'dayrom';
+font-weight: 15;
+font-size: 20px;
+margin-left: 30px;
+margin-top: 0px;
+}
+nav ul
+
+{
+list-style-type: none;
+}
+
+nav a
+{
+display: inline-block;
+color: #181818;
+padding-bottom: 1px;
+text-decoration: none;
+
+
+}
+nav a:hover
+{
+color: #760001;
+border-bottom: 3px solid #760001;
+}
+.liste
+{
+  display: inline-block;
+  width: 100%;
+}
+/*coverture*/
+#coverture
+{
+border-top: 1px solid #444;
+width: auto;
+
+}
+
+.warper2 article
+{
+  width: 940px;
+  height: 220px;
+}
+.warper2
+{
+  padding-top: 30px;
+  padding-left: 150px;
+}
+.cover
+{
+  text-align: left;
+  color: #fff;
+  background-color: rgba(24,24,24,0.8);
+  height: 33px;
+  width: 948px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  left: 189px;
+  font-size: 0.8em;
+  bottom: 277px;
+  position: absolute;
+  border-radius: 0px 0px 5px 5px;
+}
+ .button-1
+{
+  height: 60px;
+  width: 130px;
+  color: #fff;
+  background-color: #760001;
+  text-align: center;
+  border-radius: 3px;
+  float: right;
+  bottom: 40px;
+  position: relative;
+  font-size: 1.5em;
+  background: url('images/fond_degraderouge.png') repeat-x;
+}
+/* Article*/
+#article
+{
+  margin-left: 110px;
+  margin-top: 60px;
+  width: auto;
+
+}
+.article h1
+{
+  font-family: 'dayrom';
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 250px;
+  bottom: 165px;
+}
+.parag
+{
+  width: 700px;
+  height: auto;
+}
+
+p
+{
+  text-align: justify;
+  padding-top: 10px;
+}
+.auteur
+{
+  width: 250px;
+  height: 500px;
+  background-color: grey;
+  float: right;
+  margin-right: 160px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+.auteur h1
+{
+  font-family: 'dayrom';
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+
+
+}
+.auteur img
+{
+margin-left: 40px;
+padding-bottom: 20px;
+}
+.auteur p
+{
+  color: #fff;
+  text-align: justify;
+  font-family: 'dayrom';
+}
+.bulle
+{
+  position: absolute;
+ right: 460px;
+ margin-top: 150px;
+}
+.auteur ul
+{
+  list-style: none;
+
+}
+.fb
+{
+  position: absolute;
+  float: left;
+  right: 405px;
+  bottom: 0px;
+  top: 910px;
+  margin: 0;
+  padding: 0;
+}
+.twiter
+{
+  position: absolute;
+  float:left;
+  top: 910px;
+  right: 345px;
+}
+.vimeo
+{
+  position: absolute;
+  float: left;
+  top: 910px;
+  right: 295px;
+}
+.filckr
+{
+  position: absolute;
+  float: left;
+  top: 910px;
+  right: 245px;
+}
+.rss
+{
+  position: absolute;
+  float: left;
+  top: 910px;
+  right: 195px;
+}
+/* footer */
+footer
+{
+background: url('images/ico_top.png') no-repeat top center,
+url('images/separateur.png') repeat-x top, url('images/ombre.png')
+repeat-x top;
+padding-top: 25px;
+}
+footer p, footer ul
+{
+font-size: 0.8em;
+}
+footer h1
+{
+font-size: 1.1em;
+}
+#tweet, #mes_photos, #mes_amis
+{
+display: inline-block;
+vertical-align: top;
+}
+#tweet
+{
+width: 28%;
+}
+#mes_photos
+{
+width: 35%;
+}
+#mes_amis
+{
+width: 31%;
+}
+#mes_photos img
+{
+border: 1px solid #181818;
+margin-right: 2px;
+}
+#mes_amis ul
+{
+display: inline-block;
+vertical-align: top;
+margin-top: 0;
+width: 48%;
+list-style-image: url('images/ico_liensexterne.png');
+padding-left: 2px;
+}
